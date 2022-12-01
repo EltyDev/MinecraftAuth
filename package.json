@@ -1,0 +1,26 @@
+{
+  "name": "minecraftauth",
+  "version": "1.0.0",
+  "description": "Fast minecraft authentificator",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Venodez/MinecraftAuth.git"
+  },
+  "keywords": [
+    "minecraft",
+    "authentificator"
+  ],
+  "author": "Venodez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Venodez/MinecraftAuth/issues"
+  },
+  "homepage": "https://github.com/Venodez/MinecraftAuth#readme",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
