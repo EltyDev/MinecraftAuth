@@ -1,0 +1,2 @@
+# MinecraftAuth
+Fast Minecraft authentificator
