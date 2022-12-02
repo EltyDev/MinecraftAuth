@@ -4,6 +4,7 @@
   "description": "Fast minecraft authentificator",
   "main": "lib/index.js",
   "scripts": {
+    "test": "mocha",
     "doc": "jsdoc -c jsdoc.json"
   },
   "repository": {
@@ -21,8 +22,12 @@
   },
   "homepage": "https://github.com/Venodez/MinecraftAuth#readme",
   "dependencies": {
+    "chai": "^4.3.7",
     "crypto": "^1.0.1",
     "jsdoc": "^4.0.0",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0"
   }
 }
