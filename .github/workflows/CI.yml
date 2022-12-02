@@ -8,6 +8,7 @@ on:
       - "**.js"
       - "package.json"
       - ".github/workflows/ci.yml"
+  workflow_dispatch:
 
 jobs:
   test:
