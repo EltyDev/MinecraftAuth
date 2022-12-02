@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Venodez/MinecraftAuth.git"
+    "url": "https://github.com/Venodez/MinecraftAuth.git"
   },
   "keywords": [
     "minecraft",
