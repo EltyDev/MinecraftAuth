@@ -1,11 +1,11 @@
 on: ["push", "pull_request"]
 
-name: Test Coveralls
+name: Test Coveralls and generate new docs
 
 jobs:
 
-  build:
-    name: Build
+  coverage:
+    name: Coverage
     runs-on: ubuntu-latest
     steps:
 
@@ -26,3 +26,22 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+  docs:
+    name: Docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Generate docs
+        run: npm run doc
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Venodez"
+          git config --global user.email "Venodez@gmail.com"
+
+          git add -A
+          git commit -m "Generate new docs"
+          git push
