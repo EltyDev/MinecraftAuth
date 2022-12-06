@@ -41,9 +41,9 @@ jobs:
           npm run doc
       - name: Commit and push changes
         run: |
-          git config --global user.name "Venodez"
-          git config --global user.email "Venodez@gmail.com"
+          git config --global user.name "Github - Action"
+          git config --global user.email "noreply@github.com"
 
           git add -A
-          git commit -m "Generate new docs"
+          git commit -m "Generate new docs" || true
           git push
