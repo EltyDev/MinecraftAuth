@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc mocha",
     "doc": "jsdoc -c jsdoc.json",
-    "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
