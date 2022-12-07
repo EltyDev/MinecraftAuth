@@ -1,5 +1,5 @@
 {
-  "name": "minecraftauth",
+  "name": "@venodez/minecraftauth",
   "version": "1.0.0",
   "description": "Fast minecraft authentificator",
   "main": "lib/index.js",
